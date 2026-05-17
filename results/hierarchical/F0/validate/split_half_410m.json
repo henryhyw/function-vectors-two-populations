@@ -1,0 +1,210 @@
+{
+  "task_id": "hierarchical",
+  "model_size": "410m",
+  "format_id": "F0",
+  "prereg_version": "neurips2026-prereg-v1",
+  "n_seeds": 5,
+  "n_eval_per_split": 500,
+  "n_writers": 8,
+  "n_cancellers": 6,
+  "writers": [
+    [
+      11,
+      14
+    ],
+    [
+      10,
+      9
+    ],
+    [
+      11,
+      2
+    ],
+    [
+      15,
+      5
+    ],
+    [
+      11,
+      1
+    ],
+    [
+      21,
+      1
+    ],
+    [
+      16,
+      13
+    ],
+    [
+      17,
+      11
+    ]
+  ],
+  "cancellers": [
+    [
+      14,
+      3
+    ],
+    [
+      11,
+      4
+    ],
+    [
+      12,
+      0
+    ],
+    [
+      19,
+      15
+    ],
+    [
+      13,
+      1
+    ],
+    [
+      10,
+      8
+    ]
+  ],
+  "seed_results": [
+    {
+      "seed": 0,
+      "n_A": 500,
+      "n_B": 500,
+      "verdict_B": "canonical_cancellation_circuit",
+      "stats_B": {
+        "writers_logit_shift": -0.29848942947387697,
+        "writers_ci_95": [
+          -0.378454234457016,
+          -0.21462823534011846
+        ],
+        "cancellers_logit_shift": 0.2740728588104248,
+        "cancellers_ci_95": [
+          0.1852032778263092,
+          0.36398651480674743
+        ],
+        "both_logit_shift": -0.05739523506164551,
+        "both_ci_95": [
+          -0.12297755846977233,
+          0.01035193066596982
+        ],
+        "writers_sig": true,
+        "cancellers_sig": true,
+        "opposite_signs": true,
+        "attenuated_by_canceller": true
+      }
+    },
+    {
+      "seed": 1,
+      "n_A": 500,
+      "n_B": 500,
+      "verdict_B": "canonical_cancellation_circuit",
+      "stats_B": {
+        "writers_logit_shift": -0.3061272277832031,
+        "writers_ci_95": [
+          -0.3813826540470123,
+          -0.231367679643631
+        ],
+        "cancellers_logit_shift": 0.2961122035980225,
+        "cancellers_ci_95": [
+          0.20839852652549742,
+          0.3838772857189178
+        ],
+        "both_logit_shift": -0.051842422485351564,
+        "both_ci_95": [
+          -0.1213878098964691,
+          0.019356279945373523
+        ],
+        "writers_sig": true,
+        "cancellers_sig": true,
+        "opposite_signs": true,
+        "attenuated_by_canceller": true
+      }
+    },
+    {
+      "seed": 2,
+      "n_A": 500,
+      "n_B": 500,
+      "verdict_B": "canonical_cancellation_circuit",
+      "stats_B": {
+        "writers_logit_shift": -0.3087799243927002,
+        "writers_ci_95": [
+          -0.3807812774181366,
+          -0.23488588452339174
+        ],
+        "cancellers_logit_shift": 0.2814661540985107,
+        "cancellers_ci_95": [
+          0.1930077778816223,
+          0.36715703473091127
+        ],
+        "both_logit_shift": -0.05779859733581543,
+        "both_ci_95": [
+          -0.12707552723884583,
+          0.012002333879470825
+        ],
+        "writers_sig": true,
+        "cancellers_sig": true,
+        "opposite_signs": true,
+        "attenuated_by_canceller": true
+      }
+    },
+    {
+      "seed": 3,
+      "n_A": 500,
+      "n_B": 500,
+      "verdict_B": "canonical_cancellation_circuit",
+      "stats_B": {
+        "writers_logit_shift": -0.31962070083618166,
+        "writers_ci_95": [
+          -0.39954371986389164,
+          -0.23891448478698735
+        ],
+        "cancellers_logit_shift": 0.27589518928527834,
+        "cancellers_ci_95": [
+          0.1883094180107117,
+          0.3630715484619141
+        ],
+        "both_logit_shift": -0.0670841884613037,
+        "both_ci_95": [
+          -0.13333593087196352,
+          0.00014960875511168536
+        ],
+        "writers_sig": true,
+        "cancellers_sig": true,
+        "opposite_signs": true,
+        "attenuated_by_canceller": true
+      }
+    },
+    {
+      "seed": 4,
+      "n_A": 500,
+      "n_B": 500,
+      "verdict_B": "canonical_cancellation_circuit",
+      "stats_B": {
+        "writers_logit_shift": -0.2796228618621826,
+        "writers_ci_95": [
+          -0.3554964232921601,
+          -0.20353970999717713
+        ],
+        "cancellers_logit_shift": 0.23551140022277833,
+        "cancellers_ci_95": [
+          0.1447357023715973,
+          0.32329198846817014
+        ],
+        "both_logit_shift": -0.07302969741821289,
+        "both_ci_95": [
+          -0.1406026720046997,
+          -0.005726779937744167
+        ],
+        "writers_sig": true,
+        "cancellers_sig": true,
+        "opposite_signs": true,
+        "attenuated_by_canceller": true
+      }
+    }
+  ],
+  "n_canonical_on_B": 5,
+  "cell_pass": true,
+  "preregistration_note": "W/C labels from full PP set; verdict computed on held-out B half across n_seeds shuffles. Cell passes iff \u2265ceil(n_seeds/2) seeds reach canonical on B."
+}

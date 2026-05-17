@@ -1,0 +1,132 @@
+{
+  "task_id": "modular",
+  "model_size": "1b",
+  "format_id": "F0",
+  "prereg_version": "neurips2026-prereg-v1",
+  "label_vocab": {
+    "pos": "A",
+    "neg": "B"
+  },
+  "n_random_trials": 60,
+  "random_seq_len": 200,
+  "baseline_nll": 12.505961894989014,
+  "rule_baseline_nll": 7.615267063140869,
+  "n_rule_eval": 250,
+  "direct_pct_gate": 0.05,
+  "ratio_rule_specific": 5.0,
+  "ratio_indeterminate_lo": 1.5,
+  "preregistration_note": "Cancellers sourced from PP-validated heads with direct<-5%. Rule-task NLL = correct-label NLL at last position with last-position-only zero ablation. Random-task NLL = mean CE on random-token seqs with all-position zero ablation. ratio = |rule_drop| / random_drop. Verdict: \u22655 rule_specific; [1.5, 5) indeterminate; <1.5 generally_important.",
+  "results": [
+    {
+      "canceller_head": [
+        8,
+        7
+      ],
+      "primary_head": [
+        7,
+        0
+      ],
+      "rule_baseline_nll": 7.615267063140869,
+      "rule_ablated_nll": 7.563411146163941,
+      "rule_task_nll_change": -0.05185591697692793,
+      "rule_task_nll_change_abs": 0.05185591697692793,
+      "random_task_nll_increase": 0.007113472620646988,
+      "ratio_rule_to_random": 7.289817469236496,
+      "verdict": "rule_specific"
+    },
+    {
+      "canceller_head": [
+        10,
+        2
+      ],
+      "primary_head": [
+        7,
+        0
+      ],
+      "rule_baseline_nll": 7.615267063140869,
+      "rule_ablated_nll": 7.715225898742676,
+      "rule_task_nll_change": 0.0999588356018073,
+      "rule_task_nll_change_abs": 0.0999588356018073,
+      "random_task_nll_increase": 0.009925572077433387,
+      "ratio_rule_to_random": 10.07083872062871,
+      "verdict": "rule_specific"
+    },
+    {
+      "canceller_head": [
+        11,
+        6
+      ],
+      "primary_head": [
+        10,
+        4
+      ],
+      "rule_baseline_nll": 7.615267063140869,
+      "rule_ablated_nll": 7.589281000137329,
+      "rule_task_nll_change": -0.025986063003539783,
+      "rule_task_nll_change_abs": 0.025986063003539783,
+      "random_task_nll_increase": 0.006877470016480203,
+      "ratio_rule_to_random": 3.7784334851726626,
+      "verdict": "indeterminate"
+    },
+    {
+      "canceller_head": [
+        12,
+        1
+      ],
+      "primary_head": [
+        11,
+        2
+      ],
+      "rule_baseline_nll": 7.615267063140869,
+      "rule_ablated_nll": 7.593452350616455,
+      "rule_task_nll_change": -0.021814712524413693,
+      "rule_task_nll_change_abs": 0.021814712524413693,
+      "random_task_nll_increase": 0.02353439331054652,
+      "ratio_rule_to_random": 0.9269290368593364,
+      "verdict": "generally_important"
+    },
+    {
+      "canceller_head": [
+        12,
+        4
+      ],
+      "primary_head": [
+        11,
+        2
+      ],
+      "rule_baseline_nll": 7.615267063140869,
+      "rule_ablated_nll": 7.527402238845825,
+      "rule_task_nll_change": -0.0878648242950435,
+      "rule_task_nll_change_abs": 0.0878648242950435,
+      "random_task_nll_increase": 0.026459026336670632,
+      "ratio_rule_to_random": 3.3207882700229256,
+      "verdict": "indeterminate"
+    },
+    {
+      "canceller_head": [
+        13,
+        1
+      ],
+      "primary_head": [
+        12,
+        0
+      ],
+      "rule_baseline_nll": 7.615267063140869,
+      "rule_ablated_nll": 7.521706888198852,
+      "rule_task_nll_change": -0.09356017494201652,
+      "rule_task_nll_change_abs": 0.09356017494201652,
+      "random_task_nll_increase": 0.0053446133931469575,
+      "ratio_rule_to_random": 17.505508454920708,
+      "verdict": "rule_specific"
+    }
+  ],
+  "cell_bootstrap_ratio": {
+    "median": 4.829015437501668,
+    "ci_95": [
+      2.452494193709392,
+      10.074283590333852
+    ],
+    "n": 6,
+    "n_boot": 5000
+  }
+}

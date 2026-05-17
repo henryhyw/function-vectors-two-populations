@@ -1,0 +1,72 @@
+{
+  "cell": "modular_1.4b",
+  "model": "EleutherAI/pythia-1.4b",
+  "task": "modular",
+  "n_eval": 64,
+  "n_writers": 11,
+  "n_cancellers": 4,
+  "all_canceller_mean_dla": {
+    "L10.H7": -0.1194213229464367,
+    "L11.H2": 0.00285278054070659,
+    "L12.H0": 0.032090723820147105,
+    "L13.H2": -0.05010843143099919
+  },
+  "top_canceller": [
+    10,
+    7
+  ],
+  "top_canceller_mean_dla": -0.1194213229464367,
+  "ov_spectrum_per_canceller": {
+    "L10.H7": {
+      "top1_share": 0.01892564818263054,
+      "top5_share": 0.08558166772127151,
+      "top10_share": 0.15991118550300598,
+      "rank_eff_50pct": 38,
+      "ov_frobenius_norm": 17.143786741211084
+    },
+    "L11.H2": {
+      "top1_share": 0.020266562700271606,
+      "top5_share": 0.07406898587942123,
+      "top10_share": 0.1308414787054062,
+      "rank_eff_50pct": 51,
+      "ov_frobenius_norm": 7.334152118171566
+    },
+    "L12.H0": {
+      "top1_share": 0.029477817937731743,
+      "top5_share": 0.13586543500423431,
+      "top10_share": 0.24787874519824982,
+      "rank_eff_50pct": 27,
+      "ov_frobenius_norm": 16.25365794165655
+    },
+    "L13.H2": {
+      "top1_share": 0.020155232399702072,
+      "top5_share": 0.0902819037437439,
+      "top10_share": 0.1647178679704666,
+      "rank_eff_50pct": 42,
+      "ov_frobenius_norm": 13.882817446010655
+    }
+  },
+  "ov_spectrum_population": {
+    "max_top1_share": 0.029477817937731743,
+    "n_rank1_cancellers": 0,
+    "interpretation": "DISTRIBUTED-OV (all cancellers top1<0.5)"
+  },
+  "v_composition": {
+    "interpretation": "V-CASCADE VACUOUSLY RULED OUT (no upstream writer at L<L_canceller)",
+    "n_upstream_writers": 0,
+    "tested_writers": []
+  },
+  "v_shuffle_top_canceller": {
+    "n_eval": 64,
+    "n_shuffle_seeds": 3,
+    "baseline_dla_mean": -0.1194213229464367,
+    "shuffled_dla_mean_overall": -0.0056013609864749014,
+    "diff_mean": 0.11381996195996182,
+    "diff_ci_95": [
+      0.028708041979552956,
+      0.1953546189226472
+    ],
+    "rel_collapse": 0.9530957972883701,
+    "interpretation": "CONTENT-DRIVEN (shuffle collapses cancellation by \u226550%)"
+  }
+}

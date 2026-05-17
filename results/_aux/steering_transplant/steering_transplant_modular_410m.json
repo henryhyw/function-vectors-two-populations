@@ -1,0 +1,22 @@
+{
+  "task_id": "modular",
+  "model_size": "410m",
+  "n_eval": 200,
+  "n_writers": 8,
+  "n_cancellers": 3,
+  "baseline_acc": 0.48,
+  "fv_mean_ablated_acc": 0.57,
+  "fv_mean_delta_acc": 0.08999999999999997,
+  "fv_mean_ci_95_diff": [
+    -0.007479216246336365,
+    0.1874792162463363
+  ],
+  "writer_only_ablated_acc": 0.565,
+  "writer_only_delta_acc": 0.08499999999999996,
+  "writer_only_ci_95_diff": [
+    -0.01254569698351643,
+    0.18254569698351636
+  ],
+  "asymmetry_delta_W_minus_delta_FV": -0.0050000000000000044,
+  "elapsed_sec": 90.97426009178162
+}

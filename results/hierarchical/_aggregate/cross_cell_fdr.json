@@ -1,0 +1,104 @@
+{
+  "kind": "cross_cell_fdr",
+  "prereg_version": "neurips2026-prereg-v1",
+  "q": 0.1,
+  "n_cells_with_data": 6,
+  "cells": [
+    {
+      "task_id": "hierarchical",
+      "model_size": "410m",
+      "format_id": "F0",
+      "null_edge_mwu_p": 1.908083797346818e-17,
+      "fisher_canonical_p": 0.03348479410141368
+    },
+    {
+      "task_id": "hierarchical",
+      "model_size": "1b",
+      "format_id": "F0",
+      "null_edge_mwu_p": 1.3535855838773543e-11,
+      "fisher_canonical_p": 0.2078972584819526
+    },
+    {
+      "task_id": "hierarchical",
+      "model_size": "1.4b",
+      "format_id": "F0",
+      "null_edge_mwu_p": 3.021836824415503e-20,
+      "fisher_canonical_p": 0.1287754352933722
+    },
+    {
+      "task_id": "modular",
+      "model_size": "410m",
+      "format_id": "F0",
+      "null_edge_mwu_p": 7.89531140805877e-19,
+      "fisher_canonical_p": 0.00027266451120279943
+    },
+    {
+      "task_id": "modular",
+      "model_size": "1b",
+      "format_id": "F0",
+      "null_edge_mwu_p": 3.0424909816110336e-18,
+      "fisher_canonical_p": 0.09748730709213274
+    },
+    {
+      "task_id": "modular",
+      "model_size": "1.4b",
+      "format_id": "F0",
+      "null_edge_mwu_p": 7.816565469329789e-21,
+      "fisher_canonical_p": 0.10744526394085212
+    }
+  ],
+  "fdr_per_family": {
+    "null_edge_mwu_p": {
+      "n": 6,
+      "threshold": 1.3535855838773543e-11,
+      "passes": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "q_values": [
+        2.2897005568161817e-17,
+        1.3535855838773545e-11,
+        9.065510473246509e-20,
+        1.579062281611754e-18,
+        4.563736472416551e-18,
+        4.6899392815978735e-20
+      ]
+    },
+    "fisher_canonical_p": {
+      "n": 6,
+      "threshold": 0.00027266451120279943,
+      "passes": [
+        false,
+        false,
+        false,
+        true,
+        false,
+        false
+      ],
+      "q_values": [
+        0.10045438230424104,
+        0.2078972584819526,
+        0.15453052235204665,
+        0.0016359870672167966,
+        0.15453052235204665,
+        0.15453052235204665
+      ]
+    },
+    "induction_tost_p_lower": {
+      "n": 0,
+      "threshold": NaN,
+      "passes": [],
+      "q_values": []
+    },
+    "induction_tost_p_upper": {
+      "n": 0,
+      "threshold": NaN,
+      "passes": [],
+      "q_values": []
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "head": [
+    11,
+    4
+  ],
+  "antonym": {
+    "n_prompts": 100,
+    "mean_shift": -0.06876838207244873,
+    "ci_95": [
+      -0.10925476729869843,
+      -0.028410428643226664
+    ],
+    "median_shift": -0.04135608673095703,
+    "frac_positive": 0.33,
+    "acts_as_canceller": false,
+    "acts_as_writer": true
+  },
+  "country_capital": {
+    "n_prompts": 100,
+    "mean_shift": -0.005287914276123047,
+    "ci_95": [
+      -0.03337922716140747,
+      0.025263847112655623
+    ],
+    "median_shift": -0.005288124084472656,
+    "frac_positive": 0.49,
+    "acts_as_canceller": false,
+    "acts_as_writer": false
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "task_id": "hierarchical",
+  "model_size": "1.4b",
+  "n_eval": 200,
+  "n_writers": 10,
+  "n_cancellers": 4,
+  "baseline_acc": 0.6,
+  "fv_mean_ablated_acc": 0.605,
+  "fv_mean_delta_acc": 0.0050000000000000044,
+  "fv_mean_ci_95_diff": [
+    -0.09091742177519159,
+    0.1009174217751916
+  ],
+  "writer_only_ablated_acc": 0.49,
+  "writer_only_delta_acc": -0.10999999999999999,
+  "writer_only_ci_95_diff": [
+    -0.20700515037872985,
+    -0.012994849621270108
+  ],
+  "asymmetry_delta_W_minus_delta_FV": -0.11499999999999999,
+  "elapsed_sec": 92.41836547851562
+}

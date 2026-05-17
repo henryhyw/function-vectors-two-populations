@@ -1,0 +1,127 @@
+{
+  "model": "Qwen/Qwen2.5-1.5B",
+  "task": "modular",
+  "n_layers": 28,
+  "n_heads": 12,
+  "writers_llama": [
+    [
+      22,
+      5
+    ],
+    [
+      10,
+      5
+    ],
+    [
+      24,
+      10
+    ],
+    [
+      23,
+      3
+    ],
+    [
+      23,
+      2
+    ],
+    [
+      26,
+      5
+    ],
+    [
+      22,
+      8
+    ],
+    [
+      22,
+      7
+    ],
+    [
+      27,
+      11
+    ],
+    [
+      26,
+      1
+    ]
+  ],
+  "cancellers_llama": [
+    [
+      26,
+      2
+    ],
+    [
+      22,
+      2
+    ],
+    [
+      24,
+      8
+    ],
+    [
+      22,
+      4
+    ],
+    [
+      27,
+      6
+    ],
+    [
+      27,
+      8
+    ],
+    [
+      22,
+      0
+    ],
+    [
+      27,
+      10
+    ],
+    [
+      19,
+      5
+    ],
+    [
+      23,
+      0
+    ]
+  ],
+  "writer_effect": {
+    "n": 200,
+    "baseline_acc": 0.39,
+    "ablated_acc": 0.33,
+    "mean_logit_shift": -0.44178652167320254,
+    "ci_95": [
+      -0.6429996099770069,
+      -0.23000522732734688
+    ]
+  },
+  "canceller_effect": {
+    "n": 200,
+    "baseline_acc": 0.39,
+    "ablated_acc": 0.42,
+    "mean_logit_shift": 0.10606751918792724,
+    "ci_95": [
+      0.0467315873503685,
+      0.1660493968725204
+    ]
+  },
+  "joint_effect": {
+    "n": 200,
+    "baseline_acc": 0.39,
+    "ablated_acc": 0.35,
+    "mean_logit_shift": -0.02786140561103821,
+    "ci_95": [
+      -0.12210067456960677,
+      0.06663252791762345
+    ]
+  },
+  "verdict": "CANONICAL",
+  "criteria": {
+    "W_neg_CI": true,
+    "C_pos_CI": true,
+    "opposite_signs": true,
+    "attenuated": true
+  }
+}

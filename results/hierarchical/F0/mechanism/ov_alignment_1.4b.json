@@ -1,0 +1,371 @@
+{
+  "task_id": "hierarchical",
+  "model_size": "1.4b",
+  "format_id": "F0",
+  "prereg_version": "neurips2026-prereg-v1",
+  "label_vocab": {
+    "pos": "A",
+    "neg": "B"
+  },
+  "n_eval_prompts": 500,
+  "n_writers": 10,
+  "n_cancellers": 4,
+  "writers": [
+    [
+      10,
+      0
+    ],
+    [
+      10,
+      8
+    ],
+    [
+      10,
+      9
+    ],
+    [
+      10,
+      11
+    ],
+    [
+      12,
+      1
+    ],
+    [
+      12,
+      15
+    ],
+    [
+      15,
+      11
+    ],
+    [
+      17,
+      7
+    ],
+    [
+      18,
+      0
+    ],
+    [
+      22,
+      2
+    ]
+  ],
+  "cancellers": [
+    [
+      10,
+      7
+    ],
+    [
+      11,
+      2
+    ],
+    [
+      12,
+      0
+    ],
+    [
+      12,
+      7
+    ]
+  ],
+  "direct_pct_gate": 0.05,
+  "ov_align_gate_cosine": -0.2,
+  "ov_align_gate_pair_frac": 0.3,
+  "n_boot": 5000,
+  "n_total_pairs": 12,
+  "n_anti_aligned_pairs": 5,
+  "fraction_anti_aligned": 0.4166666666666667,
+  "cell_passes_ov_alignment_gate": true,
+  "results": [
+    {
+      "writer": [
+        10,
+        0
+      ],
+      "canceller": [
+        11,
+        2
+      ],
+      "mean_cos": -0.33460388585925105,
+      "ci_95": [
+        -0.3377175048932433,
+        -0.3314940931618214
+      ],
+      "n_valid": 500,
+      "verdict": "anti_aligned",
+      "within_layer_null": {
+        "n_null_pairs": 20,
+        "null_mean_cos_p05": -0.029265331062870246,
+        "null_mean_cos_p50": 0.004951206976114918,
+        "null_mean_cos_p95": 0.15302681515263394,
+        "p_observed_le_null": 0.0
+      }
+    },
+    {
+      "writer": [
+        10,
+        0
+      ],
+      "canceller": [
+        12,
+        0
+      ],
+      "mean_cos": 0.01529513766646778,
+      "ci_95": [
+        0.01240072488225196,
+        0.01817257956076137
+      ],
+      "n_valid": 500,
+      "verdict": "aligned",
+      "within_layer_null": {
+        "n_null_pairs": 20,
+        "null_mean_cos_p05": -0.04752052037084359,
+        "null_mean_cos_p50": 0.007402332101152523,
+        "null_mean_cos_p95": 0.21979682877659812,
+        "p_observed_le_null": 0.5
+      }
+    },
+    {
+      "writer": [
+        10,
+        0
+      ],
+      "canceller": [
+        12,
+        7
+      ],
+      "mean_cos": -0.5223006871044635,
+      "ci_95": [
+        -0.5288710840381682,
+        -0.5155836966253817
+      ],
+      "n_valid": 500,
+      "verdict": "anti_aligned",
+      "within_layer_null": {
+        "n_null_pairs": 20,
+        "null_mean_cos_p05": -0.041335082521295405,
+        "null_mean_cos_p50": -0.0024443700896918017,
+        "null_mean_cos_p95": 0.05221731226812118,
+        "p_observed_le_null": 0.0
+      }
+    },
+    {
+      "writer": [
+        10,
+        8
+      ],
+      "canceller": [
+        11,
+        2
+      ],
+      "mean_cos": -0.19015920083224774,
+      "ci_95": [
+        -0.19401149257272482,
+        -0.18635208017639818
+      ],
+      "n_valid": 500,
+      "verdict": "uncorrelated",
+      "within_layer_null": {
+        "n_null_pairs": 20,
+        "null_mean_cos_p05": -0.30886293645799157,
+        "null_mean_cos_p50": 0.001957089763813201,
+        "null_mean_cos_p95": 0.08595990272201606,
+        "p_observed_le_null": 0.1
+      }
+    },
+    {
+      "writer": [
+        10,
+        8
+      ],
+      "canceller": [
+        12,
+        0
+      ],
+      "mean_cos": 0.027447632112598513,
+      "ci_95": [
+        0.026110417864903868,
+        0.028768465005217875
+      ],
+      "n_valid": 500,
+      "verdict": "aligned",
+      "within_layer_null": {
+        "n_null_pairs": 20,
+        "null_mean_cos_p05": -0.014827448837927193,
+        "null_mean_cos_p50": -0.0006548833445049239,
+        "null_mean_cos_p95": 0.10329662348702554,
+        "p_observed_le_null": 0.8
+      }
+    },
+    {
+      "writer": [
+        10,
+        8
+      ],
+      "canceller": [
+        12,
+        7
+      ],
+      "mean_cos": -0.23571709313988687,
+      "ci_95": [
+        -0.23836437007710337,
+        -0.23307013111412525
+      ],
+      "n_valid": 500,
+      "verdict": "anti_aligned",
+      "within_layer_null": {
+        "n_null_pairs": 20,
+        "null_mean_cos_p05": -0.04201848467011587,
+        "null_mean_cos_p50": 0.012254074309223142,
+        "null_mean_cos_p95": 0.08550114638209344,
+        "p_observed_le_null": 0.0
+      }
+    },
+    {
+      "writer": [
+        10,
+        9
+      ],
+      "canceller": [
+        11,
+        2
+      ],
+      "mean_cos": -0.48812616342306137,
+      "ci_95": [
+        -0.4916347234472632,
+        -0.4842388000965118
+      ],
+      "n_valid": 500,
+      "verdict": "anti_aligned",
+      "within_layer_null": {
+        "n_null_pairs": 20,
+        "null_mean_cos_p05": -0.06584446166018024,
+        "null_mean_cos_p50": -0.010719386585722532,
+        "null_mean_cos_p95": 0.19339344808273023,
+        "p_observed_le_null": 0.0
+      }
+    },
+    {
+      "writer": [
+        10,
+        9
+      ],
+      "canceller": [
+        12,
+        0
+      ],
+      "mean_cos": 0.03287191552676086,
+      "ci_95": [
+        0.031060671671984893,
+        0.03463212075256015
+      ],
+      "n_valid": 500,
+      "verdict": "aligned",
+      "within_layer_null": {
+        "n_null_pairs": 20,
+        "null_mean_cos_p05": -0.02789461775003874,
+        "null_mean_cos_p50": 0.008351399365077668,
+        "null_mean_cos_p95": 0.046113942369632434,
+        "p_observed_le_null": 0.8
+      }
+    },
+    {
+      "writer": [
+        10,
+        9
+      ],
+      "canceller": [
+        12,
+        7
+      ],
+      "mean_cos": -0.3034341262578964,
+      "ci_95": [
+        -0.3055430893585086,
+        -0.30114995174184445
+      ],
+      "n_valid": 500,
+      "verdict": "anti_aligned",
+      "within_layer_null": {
+        "n_null_pairs": 20,
+        "null_mean_cos_p05": -0.05191993265225901,
+        "null_mean_cos_p50": 0.019064036778043372,
+        "null_mean_cos_p95": 0.119280824803561,
+        "p_observed_le_null": 0.0
+      }
+    },
+    {
+      "writer": [
+        10,
+        11
+      ],
+      "canceller": [
+        11,
+        2
+      ],
+      "mean_cos": -0.05640352033171803,
+      "ci_95": [
+        -0.05836186577822081,
+        -0.054555740997311655
+      ],
+      "n_valid": 500,
+      "verdict": "uncorrelated",
+      "within_layer_null": {
+        "n_null_pairs": 20,
+        "null_mean_cos_p05": -0.05564822856786195,
+        "null_mean_cos_p50": -0.011877484008267856,
+        "null_mean_cos_p95": 0.15241599115282298,
+        "p_observed_le_null": 0.05
+      }
+    },
+    {
+      "writer": [
+        10,
+        11
+      ],
+      "canceller": [
+        12,
+        0
+      ],
+      "mean_cos": -0.013837667767998937,
+      "ci_95": [
+        -0.014879962644787338,
+        -0.012797484475140482
+      ],
+      "n_valid": 500,
+      "verdict": "uncorrelated",
+      "within_layer_null": {
+        "n_null_pairs": 20,
+        "null_mean_cos_p05": -0.02974831314287585,
+        "null_mean_cos_p50": 0.00583537162624998,
+        "null_mean_cos_p95": 0.14045169677063823,
+        "p_observed_le_null": 0.25
+      }
+    },
+    {
+      "writer": [
+        10,
+        11
+      ],
+      "canceller": [
+        12,
+        7
+      ],
+      "mean_cos": -0.024218493311200292,
+      "ci_95": [
+        -0.02513083081470104,
+        -0.023318890235741855
+      ],
+      "n_valid": 500,
+      "verdict": "uncorrelated",
+      "within_layer_null": {
+        "n_null_pairs": 20,
+        "null_mean_cos_p05": -0.060783521447749796,
+        "null_mean_cos_p50": -0.001926076723695587,
+        "null_mean_cos_p95": 0.057417820527590833,
+        "p_observed_le_null": 0.2
+      }
+    }
+  ]
+}

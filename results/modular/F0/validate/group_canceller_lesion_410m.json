@@ -1,0 +1,288 @@
+{
+  "task_id": "modular",
+  "model_size": "410m",
+  "format_id": "F0",
+  "prereg_version": "neurips2026-prereg-v1",
+  "label_vocab": {
+    "pos": "A",
+    "neg": "B"
+  },
+  "n_eval": 500,
+  "n_writers": 8,
+  "n_cancellers": 3,
+  "writers": [
+    [
+      11,
+      2
+    ],
+    [
+      11,
+      14
+    ],
+    [
+      13,
+      5
+    ],
+    [
+      15,
+      5
+    ],
+    [
+      16,
+      13
+    ],
+    [
+      17,
+      11
+    ],
+    [
+      21,
+      5
+    ],
+    [
+      23,
+      2
+    ]
+  ],
+  "cancellers": [
+    [
+      11,
+      4
+    ],
+    [
+      12,
+      0
+    ],
+    [
+      14,
+      3
+    ]
+  ],
+  "union_heads": [
+    [
+      11,
+      2
+    ],
+    [
+      11,
+      4
+    ],
+    [
+      11,
+      14
+    ],
+    [
+      12,
+      0
+    ],
+    [
+      13,
+      5
+    ],
+    [
+      14,
+      3
+    ],
+    [
+      15,
+      5
+    ],
+    [
+      16,
+      13
+    ],
+    [
+      17,
+      11
+    ],
+    [
+      21,
+      5
+    ],
+    [
+      23,
+      2
+    ]
+  ],
+  "direct_pct_gate": 0.05,
+  "effect_threshold": 0.1,
+  "boot_n": 10000,
+  "preregistration_note": "Canonical cancellation circuit verdict requires ALL of: (a) writers |\u0394shift|\u22650.10 + CI excludes 0, (b) cancellers |\u0394shift|\u22650.10 + CI excludes 0, (c) opposite signs, (d) joint lesion attenuated vs writers alone.",
+  "per_strategy": {
+    "zero": {
+      "writers_logit_shift": -0.3909177188873291,
+      "writers_ci_95": [
+        -0.5312156045913696,
+        -0.25173279199600235
+      ],
+      "cancellers_logit_shift": 0.1649371395111084,
+      "cancellers_ci_95": [
+        0.11860654344558716,
+        0.2119539598464966
+      ],
+      "both_logit_shift": -0.14446056365966797,
+      "both_ci_95": [
+        -0.2619434269428253,
+        -0.025470924615860056
+      ],
+      "writers_acc_delta": -0.008,
+      "cancellers_acc_delta": 0.034,
+      "both_acc_delta": 0.084,
+      "baseline_acc": 0.556,
+      "writers_sig": true,
+      "cancellers_sig": true,
+      "opposite_signs": true,
+      "attenuated_by_canceller": true,
+      "verdict": "canonical_cancellation_circuit",
+      "n_writers": 8,
+      "n_cancellers": 3,
+      "n_union": 11
+    },
+    "mean": {
+      "writers_logit_shift": -0.31217136192321776,
+      "writers_ci_95": [
+        -0.4566189835071564,
+        -0.1671831622123719
+      ],
+      "cancellers_logit_shift": 0.12476764297485352,
+      "cancellers_ci_95": [
+        0.06957183079719544,
+        0.18064933104515077
+      ],
+      "both_logit_shift": -0.23204624557495118,
+      "both_ci_95": [
+        -0.3608319468975067,
+        -0.1022419489383698
+      ],
+      "writers_acc_delta": 0.04,
+      "cancellers_acc_delta": 0.028,
+      "both_acc_delta": 0.11,
+      "baseline_acc": 0.556,
+      "writers_sig": true,
+      "cancellers_sig": true,
+      "opposite_signs": true,
+      "attenuated_by_canceller": true,
+      "verdict": "canonical_cancellation_circuit",
+      "n_writers": 8,
+      "n_cancellers": 3,
+      "n_union": 11
+    },
+    "resample": {
+      "writers_logit_shift": -0.348676441192627,
+      "writers_ci_95": [
+        -0.5383999886989593,
+        -0.15346643762588502
+      ],
+      "cancellers_logit_shift": 0.12469374275207519,
+      "cancellers_ci_95": [
+        0.0479556052684784,
+        0.19974903030395508
+      ],
+      "both_logit_shift": -0.27740221977233886,
+      "both_ci_95": [
+        -0.44891834826469423,
+        -0.10392294826507575
+      ],
+      "writers_acc_delta": -0.076,
+      "cancellers_acc_delta": 0.026,
+      "both_acc_delta": -0.04,
+      "baseline_acc": 0.556,
+      "writers_sig": true,
+      "cancellers_sig": true,
+      "opposite_signs": true,
+      "attenuated_by_canceller": true,
+      "verdict": "canonical_cancellation_circuit",
+      "n_writers": 8,
+      "n_cancellers": 3,
+      "n_union": 11
+    }
+  },
+  "leave_one_out_resample": [
+    {
+      "kept_canceller": [
+        11,
+        4
+      ],
+      "lesion_set": [
+        [
+          12,
+          0
+        ],
+        [
+          14,
+          3
+        ]
+      ],
+      "logit_shift_n_minus_1": 0.04308757209777832,
+      "attenuation_vs_full": 0.08160617065429687,
+      "signed_attenuation": 0.08160617065429687
+    },
+    {
+      "kept_canceller": [
+        12,
+        0
+      ],
+      "lesion_set": [
+        [
+          11,
+          4
+        ],
+        [
+          14,
+          3
+        ]
+      ],
+      "logit_shift_n_minus_1": 0.08091340255737305,
+      "attenuation_vs_full": 0.043780340194702144,
+      "signed_attenuation": 0.043780340194702144
+    },
+    {
+      "kept_canceller": [
+        14,
+        3
+      ],
+      "lesion_set": [
+        [
+          11,
+          4
+        ],
+        [
+          12,
+          0
+        ]
+      ],
+      "logit_shift_n_minus_1": 0.10864417457580566,
+      "attenuation_vs_full": 0.016049568176269527,
+      "signed_attenuation": 0.016049568176269527
+    }
+  ],
+  "most_critical_canceller": {
+    "kept_canceller": [
+      11,
+      4
+    ],
+    "lesion_set": [
+      [
+        12,
+        0
+      ],
+      [
+        14,
+        3
+      ]
+    ],
+    "logit_shift_n_minus_1": 0.04308757209777832,
+    "attenuation_vs_full": 0.08160617065429687,
+    "signed_attenuation": 0.08160617065429687
+  },
+  "fv_set_sign_shuffle_null": {
+    "n_perm": 10000,
+    "observed_contrast": -0.3607531795501709,
+    "null_p05": -0.3153478298187256,
+    "null_p50": -0.04260606956481934,
+    "null_p95": 0.1678649616241455,
+    "null_mean": -0.04485652953071594,
+    "null_std": 0.15156305055800082,
+    "p_two_sided": 0.0116
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "src_task": "modular",
+  "dst_task": "hierarchical",
+  "model_size": "410m",
+  "format_id": "F0",
+  "prereg_version": "neurips2026-prereg-v1",
+  "n_eval": 500,
+  "n_writers": 8,
+  "n_cancellers": 3,
+  "writers_from_src": [
+    [
+      13,
+      5
+    ],
+    [
+      17,
+      11
+    ],
+    [
+      11,
+      14
+    ],
+    [
+      11,
+      2
+    ],
+    [
+      15,
+      5
+    ],
+    [
+      16,
+      13
+    ],
+    [
+      21,
+      5
+    ],
+    [
+      23,
+      2
+    ]
+  ],
+  "cancellers_from_src": [
+    [
+      11,
+      4
+    ],
+    [
+      14,
+      3
+    ],
+    [
+      12,
+      0
+    ]
+  ],
+  "verdict_on_dst": "canonical_cancellation_circuit",
+  "stats_on_dst": {
+    "writers_logit_shift": -0.2971468257904053,
+    "writers_ci_95": [
+      -0.4301944603919983,
+      -0.16302996020317082
+    ],
+    "cancellers_logit_shift": 0.14583358573913574,
+    "cancellers_ci_95": [
+      0.09458402667045594,
+      0.19708818101882933
+    ],
+    "both_logit_shift": -0.09800976753234864,
+    "both_ci_95": [
+      -0.21869233756065368,
+      0.022219636821746824
+    ],
+    "writers_sig": true,
+    "cancellers_sig": true,
+    "opposite_signs": true,
+    "attenuated_by_canceller": true
+  },
+  "preregistration_note": "Writers/cancellers from src task PP; canonical four-condition verdict computed on dst task held-out eval prompts."
+}

@@ -1,0 +1,78 @@
+{
+  "task_id": "modular",
+  "model_size": "410m",
+  "format_id": "F0",
+  "prereg_version": "neurips2026-prereg-v1",
+  "label_vocab": {
+    "pos": "A",
+    "neg": "B"
+  },
+  "n_random_trials": 60,
+  "random_seq_len": 200,
+  "baseline_nll": 12.556097348531088,
+  "rule_baseline_nll": 6.754058240890503,
+  "n_rule_eval": 250,
+  "direct_pct_gate": 0.05,
+  "ratio_rule_specific": 5.0,
+  "ratio_indeterminate_lo": 1.5,
+  "preregistration_note": "Cancellers sourced from PP-validated heads with direct<-5%. Rule-task NLL = correct-label NLL at last position with last-position-only zero ablation. Random-task NLL = mean CE on random-token seqs with all-position zero ablation. ratio = |rule_drop| / random_drop. Verdict: \u22655 rule_specific; [1.5, 5) indeterminate; <1.5 generally_important.",
+  "results": [
+    {
+      "canceller_head": [
+        11,
+        4
+      ],
+      "primary_head": null,
+      "rule_baseline_nll": 6.754058240890503,
+      "rule_ablated_nll": 6.603024057388305,
+      "rule_task_nll_change": -0.15103418350219755,
+      "rule_task_nll_change_abs": 0.15103418350219755,
+      "random_task_nll_increase": 0.001,
+      "ratio_rule_to_random": 151.03418350219755,
+      "verdict": "rule_specific"
+    },
+    {
+      "canceller_head": [
+        12,
+        0
+      ],
+      "primary_head": [
+        11,
+        2
+      ],
+      "rule_baseline_nll": 6.754058240890503,
+      "rule_ablated_nll": 6.7215956153869625,
+      "rule_task_nll_change": -0.03246262550354029,
+      "rule_task_nll_change_abs": 0.03246262550354029,
+      "random_task_nll_increase": 0.012575817108153586,
+      "ratio_rule_to_random": 2.5813531816149746,
+      "verdict": "indeterminate"
+    },
+    {
+      "canceller_head": [
+        14,
+        3
+      ],
+      "primary_head": [
+        13,
+        5
+      ],
+      "rule_baseline_nll": 6.754058240890503,
+      "rule_ablated_nll": 6.755384016036987,
+      "rule_task_nll_change": 0.0013257751464843537,
+      "rule_task_nll_change_abs": 0.0013257751464843537,
+      "random_task_nll_increase": 0.0028002421061188443,
+      "ratio_rule_to_random": 0.4734501861776115,
+      "verdict": "generally_important"
+    }
+  ],
+  "cell_bootstrap_ratio": {
+    "median": 11.286145325558023,
+    "ci_95": [
+      0.4734501861776115,
+      151.03418350219755
+    ],
+    "n": 3,
+    "n_boot": 5000
+  }
+}

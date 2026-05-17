@@ -1,0 +1,42 @@
+{
+  "hierarchical_410m": {
+    "n_eval": 200,
+    "n_shuffle_seeds": 3,
+    "baseline_dla_mean": -0.2155165925901383,
+    "baseline_dla_std": 0.6781652756852198,
+    "shuffle_dla_mean_per_seed": [
+      0.00983176423702389,
+      -0.00135270441416651,
+      -0.12710143703501672
+    ],
+    "shuffle_dla_mean_overall": -0.03954079240405311,
+    "diff_mean": 0.17597580018608522,
+    "diff_ci_95": [
+      0.07957371545237645,
+      0.2789776336209227
+    ],
+    "fraction_negative_dla_baseline": 0.635,
+    "fraction_negative_dla_shuffled": 0.5016666666666667,
+    "interpretation": "CONTENT-DRIVEN: V-shuffle destroys negative DLA"
+  },
+  "modular_410m": {
+    "n_eval": 200,
+    "n_shuffle_seeds": 3,
+    "baseline_dla_mean": -0.21531174163566902,
+    "baseline_dla_std": 0.6816987800475485,
+    "shuffle_dla_mean_per_seed": [
+      -0.06251102320849895,
+      -0.13173801346682013,
+      -0.11394048855174332
+    ],
+    "shuffle_dla_mean_overall": -0.10272984174235414,
+    "diff_mean": 0.11258189989331488,
+    "diff_ci_95": [
+      0.015182386842614495,
+      0.205906865614544
+    ],
+    "fraction_negative_dla_baseline": 0.615,
+    "fraction_negative_dla_shuffled": 0.5433333333333333,
+    "interpretation": "CONTENT-DRIVEN: V-shuffle destroys negative DLA"
+  }
+}

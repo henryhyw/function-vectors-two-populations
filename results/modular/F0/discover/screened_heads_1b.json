@@ -1,0 +1,102 @@
+{
+  "task_id": "modular",
+  "format_id": "F0",
+  "model_size": "1b",
+  "prereg_version": "neurips2026-prereg-v1",
+  "writers_refined": [],
+  "cancellers_refined": [],
+  "top_by_dla": [
+    [
+      10,
+      4
+    ],
+    [
+      13,
+      5
+    ],
+    [
+      12,
+      0
+    ],
+    [
+      7,
+      0
+    ],
+    [
+      13,
+      1
+    ],
+    [
+      7,
+      2
+    ],
+    [
+      11,
+      6
+    ],
+    [
+      15,
+      4
+    ],
+    [
+      14,
+      2
+    ],
+    [
+      8,
+      7
+    ],
+    [
+      13,
+      2
+    ],
+    [
+      11,
+      2
+    ],
+    [
+      10,
+      2
+    ],
+    [
+      12,
+      4
+    ],
+    [
+      7,
+      1
+    ],
+    [
+      12,
+      1
+    ],
+    [
+      8,
+      0
+    ],
+    [
+      6,
+      3
+    ],
+    [
+      8,
+      5
+    ],
+    [
+      4,
+      3
+    ]
+  ],
+  "pp_screen_k": 20,
+  "primary": [],
+  "prompt_partition": {
+    "discovery_seeds": [
+      42,
+      43
+    ],
+    "discovery_n": 192,
+    "validation_seeds": [
+      44
+    ]
+  }
+}

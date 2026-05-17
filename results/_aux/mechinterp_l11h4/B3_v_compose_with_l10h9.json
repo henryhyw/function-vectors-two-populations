@@ -1,0 +1,44 @@
+{
+  "hierarchical_410m": {
+    "killed_upstream_head": [
+      10,
+      9
+    ],
+    "named_head": [
+      11,
+      4
+    ],
+    "n_eval": 200,
+    "baseline_dla_mean": -0.2155165925901383,
+    "patched_dla_mean": -0.2089568882342428,
+    "diff_mean": 0.006559704355895519,
+    "diff_ci_95": [
+      -0.0012196063697338104,
+      0.014544927349779746
+    ],
+    "fraction_negative_baseline": 0.635,
+    "fraction_negative_patched": 0.625,
+    "interpretation": "INDEPENDENT: L10.H9 not in L11.H4's V-input path"
+  },
+  "modular_410m": {
+    "killed_upstream_head": [
+      10,
+      9
+    ],
+    "named_head": [
+      11,
+      4
+    ],
+    "n_eval": 200,
+    "baseline_dla_mean": -0.21531174163566902,
+    "patched_dla_mean": -0.2107351129408926,
+    "diff_mean": 0.004576628694776446,
+    "diff_ci_95": [
+      -0.002108738295268267,
+      0.011025046559458131
+    ],
+    "fraction_negative_baseline": 0.615,
+    "fraction_negative_patched": 0.605,
+    "interpretation": "INDEPENDENT: L10.H9 not in L11.H4's V-input path"
+  }
+}
