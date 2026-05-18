@@ -2,7 +2,7 @@
 
 Code and reproduction data accompanying the paper.
 
-> **Status: anonymous review in progress.** This repository is shared via an anonymization service for ACL ARR review. The manuscript and LaTeX source are not included here.
+> Preprint accompanying the code+data release. The manuscript and LaTeX source are not included here.
 
 ---
 
@@ -95,15 +95,17 @@ Additive-steering vectors are constructed (`code/steering.py`) and evaluated und
 ## Citation
 
 ```bibtex
-@misc{anonymous2026fv_two_populations,
-  title  = {Function Vectors Are Two Populations: Writers and Cancellers in {ICL} Heads},
-  author = {Anonymous Authors},
-  year   = {2026},
-  note   = {Under review at ACL ARR},
+@article{wang2026fv_two_populations,
+  title         = {Function Vectors Are Two Populations: Writers and Cancellers in {ICL} Heads},
+  author        = {Wang, Han-yu},
+  year          = {2026},
+  eprint        = {XXXX.XXXXX},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.CL},
 }
 ```
 
-This entry will be updated once the paper is accepted.
+`eprint` will be filled in once the arXiv preprint is live.
 
 ---
 
