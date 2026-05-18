@@ -2,8 +2,6 @@
 
 Code and reproduction data accompanying the paper.
 
-> Preprint accompanying the code+data release. The manuscript and LaTeX source are not included here.
-
 ---
 
 ## Layout
