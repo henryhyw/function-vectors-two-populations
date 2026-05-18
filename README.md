@@ -62,9 +62,10 @@ The `results/` directory in this release is the seeded output of one such run; y
 | `code/scale_extension.py`       | non-main-cell pipeline driver      |
 | `code/case_study.py`            | L11.H4-specific deep-dive          |
 | `code/aggregate.py`             | cross-cell FWER + extracted numbers |
-| `figures/fig1_headline.py`      | Figure 1 — W/C/joint forest plot   |
-| `figures/fig2_qk_mechanism.py`  | Figure 2 — QK source W vs C bars   |
-| `figures/fig3_intervention.py`  | Figure 3 — canceller-ablation Δacc |
+| `figures/fig1_headline.py`      | Figure 1 — W/C/joint forest plot                                         |
+| `figures/fig2_qk_mechanism.py`  | Figure 2 — QK source W vs C bars                                         |
+| `figures/fig4_casestudy.py`     | Figure 4 — L11.H4 case study: cross-template canceller↔writer sign-flip  |
+| `figures/fig5_intervention.py`  | Figure 5 — per-cell accuracy Δ after zero-ablating the canceller subgroup |
 
 ---
 

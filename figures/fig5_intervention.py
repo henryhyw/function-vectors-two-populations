@@ -1,4 +1,4 @@
-"""Figure 3: Canceller ablation — actionable consequence.
+"""Figure 5: Canceller ablation — actionable consequence.
 
 Per-cell forest plot of accuracy delta after zero-ablating the
 canceller subgroup, with paired bootstrap 95% CI. Annotated with
@@ -27,7 +27,7 @@ COL_TEXT = "#2a2a28"
 
 ROOT = Path("/sessions/affectionate-quirky-goodall/mnt/outputs/paper")
 NUMBERS = ROOT / "extracted_numbers.json"
-OUT     = ROOT / "draft/figures/fig3_intervention.pdf"
+OUT     = ROOT / "draft/figures/fig5_intervention.pdf"
 
 
 CELL_ORDER = [
