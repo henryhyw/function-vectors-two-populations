@@ -1,4 +1,4 @@
-# Function Vectors Are Two Populations: Writers and Cancellers in ICL Heads
+# Function-Vector Heads Are Two Populations: Writers and Cancellers in ICL Heads
 
 Code and reproduction data accompanying the paper.
 
@@ -87,25 +87,6 @@ The pipeline reproduces:
 - the canceller-ablation accuracy effect (+2 to +7 pp directionally, CI-confirmed on hier-410M).
 
 Additive-steering vectors are constructed (`code/steering.py`) and evaluated under held-out $\alpha$ on logit shift (paper App. D.1); the paper makes no positive accuracy claim from additive steering, and the earlier in-sample-$\alpha$ evaluation path is explicitly excluded as confounded.
-
----
-
-## Citation
-
-```bibtex
-@article{wang2026fv_two_populations,
-  title         = {Function Vectors Are Two Populations: Writers and Cancellers in {ICL} Heads},
-  author        = {Wang, Han-yu},
-  year          = {2026},
-  eprint        = {XXXX.XXXXX},
-  archivePrefix = {arXiv},
-  primaryClass  = {cs.CL},
-}
-```
-
-`eprint` will be filled in once the arXiv preprint is live.
-
----
 
 ## License
 
