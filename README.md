@@ -1,4 +1,4 @@
-# Function-Vector Heads Are Two Populations: Writers and Cancellers in ICL Heads
+# Function-Vector Heads Are Two Populations: Writers and Cancellers in In-Context Learning
 
 Code and reproduction data accompanying the paper.
 
