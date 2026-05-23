@@ -13,7 +13,7 @@ Code and reproduction data accompanying the paper.
 ├── pipeline.ipynb                   single notebook that drives every result
 ├── extracted_numbers.json           every paper-cited number, keyed by claim
 ├── code/                            Python package (one module per pipeline stage)
-├── figures/                         paper figure-generation scripts (fig1–fig3)
+├── figures/                         paper figure-generation scripts (fig1–fig5)
 └── results/                         per-cell JSONs produced by pipeline.ipynb
     ├── hierarchical/, modular/      main 2 × 3 grid
     └── _aux/                        auxiliary themes (sign-shuffle, vocab transfer,
@@ -60,10 +60,11 @@ The `results/` directory in this release is the seeded output of one such run; y
 | `code/scale_extension.py`       | non-main-cell pipeline driver      |
 | `code/case_study.py`            | L11.H4-specific deep-dive          |
 | `code/aggregate.py`             | cross-cell FWER + extracted numbers |
-| `figures/fig1_headline.py`      | Figure 1 — W/C/joint forest plot                                         |
-| `figures/fig2_qk_mechanism.py`  | Figure 2 — QK source W vs C bars                                         |
-| `figures/fig4_casestudy.py`     | Figure 4 — L11.H4 case study: cross-template canceller↔writer sign-flip  |
-| `figures/fig5_intervention.py`  | Figure 5 — per-cell accuracy Δ after zero-ablating the canceller subgroup |
+| `figures/fig1_headline.py`        | Figure 1 — W/C/joint forest plot                                         |
+| `figures/fig2_qk_mechanism.py`    | Figure 2 — QK source W vs C bars                                         |
+| `figures/fig3_layer_geometry.py`  | Figure 3 — layer distribution of writers and cancellers                  |
+| `figures/fig4_casestudy.py`       | Figure 4 — L11.H4 case study: cross-template canceller↔writer sign-flip  |
+| `figures/fig5_intervention.py`    | Figure 5 — per-cell accuracy Δ after zero-ablating the canceller subgroup |
 
 ---
 
